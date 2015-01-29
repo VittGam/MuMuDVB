@@ -957,8 +957,8 @@ void show_traffic( char *log_module, double now, int show_traffic_interval, mumu
 		show_traffic_time=now;
 		for (int curr_channel = 0; curr_channel < chan_p->number_of_channels; curr_channel++)
 		{
-			log_message( log_module,  MSG_INFO, "Traffic :  %.2f kb/s \t  for channel \"%s\"\n",
-					chan_p->channels[curr_channel].traffic*8,
+			log_message( log_module,  MSG_INFO, "Traffic :  %.2f kB/s \t  for channel \"%s\"\n",
+					chan_p->channels[curr_channel].traffic,
 					chan_p->channels[curr_channel].name);
 		}
 	}
